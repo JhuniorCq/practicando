@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GT America Standard', sans-serif;
+}
+
+/*CSS - ENCABEZADO*/
+header {
+    background-color: black;
+    font-size: 24px;
+}
+
+/*FORMA MODERNA PARA HACER EL ENCABEZADO*/
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;/*Con esto separo proporcionalmente cada <li> en todo el ancho*/
+    align-items: center;
+}
+
+.navbar ul .espacio {
+    flex-grow: 1;/*Con esto le doy al <li> Vacío le doy todo el Espacio Disponible entre los 2 <li> anteriores y posteriores*/
+}
+/*FIN - FORMA MODERNA DE HACER EL ENCABEZADO*/
+
+.navbar ul li {
+    margin: 20px 10px;
+}
+
+.navbar ul li:first-child {
+    border-right: 1px solid #FFFFFF;
+    margin-left: 80px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 90px;
+}
+
+.navbar ul li a .logo-header {
+    width: 150px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.submit-request {
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    padding: 10px 25px;
+    background-color: #191a1b;
+}
+
+.sig-in {
+    border: none;
+    border-radius: 8px;
+    background-color: #4C5FD5;
+    padding: 10px 40px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sig-in:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+/*CSS - PRIMERA SECCIÓN*/
+section.primera-seccion {
+    width: 100%;
+    background-color: #DADBF1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 115px;
+    font-size: 3.5rem;
+}
+
+section.primera-seccion div {
+    width: 100%;
+    text-align: center;
+}
+
+
+section.primera-seccion div:first-child {/*Primer <div> sel Primer <section>*/
+    margin-bottom: 20px;
+}
+
+section.primera-seccion div:last-child input {
+    padding: 1.5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    transition: border 0.5s ease-in-out;
+    font-size: 20px;
+}
+
+section.primera-seccion div:last-child input:hover {
+    border: 1px solid #4C5FD5;
+}
+
+section.primera-seccion div:last-child input:focus {
+    outline: none;
+    border: 1px solid #4C5FD5;
+}
+
+/*CSS - SEGUNDA SECCIÓN*/
+section.segunda-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+section.segunda-seccion > div {
+    width: 50%;
+    display: flex;
+    margin-bottom: 3rem;
+    padding-right: 1.5rem;
+}
+
+.contenedor-img {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.contenedor-img img {
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+}
+
+.contenedor-texto h2{
+    margin: 3rem 0 1rem;
+}
+
+.contenedor-texto p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    align-items: justify;
+}
+
+.contenedor-texto a {
+    text-decoration: none;
+    color: #4C5FD5;
+    font-size: 20px;
+}
+
+.contenedor-texto a:hover {
+    text-decoration: underline;
+}
+
+/*CSS - FOOTER*/
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.columna {
+    margin: 50px 0;
+}
+
+.columna h2 {
+    margin-bottom: 20px;
+}
+
+.columna ul {
+    list-style-type: none;
+}
+
+.columna ul li:not(.break) {
+    margin-bottom: 8px;
+}
+
+.break {
+    margin-bottom: 30px;
+}
+
+.contact-us {
+    margin-bottom: 8px;
+}
+
+footer .columna:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.logo-footer {
+    width: 30px;
+}
