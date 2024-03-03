@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+ul {
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+li {
+    color: rgb(52, 52, 52);
+    padding: .3rem .7rem;
+}
+
+li:hover {
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Para TABLETAS */
+@media screen and (max-width: 1024px){
+    li {
+        flex-grow: 1;
+    }
+}
+
+/* Para CELULARES */
+@media screen and (max-width: 480px) {
+    ul {
+        flex-direction: column;
+    }
+}
