@@ -1,11 +1,14 @@
 
 import './App.css';
-import Testimonio from './componentes/Testimonio';
+import {Testimonio} from './componentes/Testimonio';
 
 function App() {
   return (
-    <div className="App">
-      <Testimonio />
+    <div className='App'>
+      <div className='contenedor-principal'>
+        <h1>Esto es lo que dicen nuestros alumnos sobre freeCodeCamp</h1>
+        <Testimonio />
+      </div>
     </div>
   );
 }
