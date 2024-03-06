@@ -1,27 +1,19 @@
 import React from "react";
 import '../styles/Testimonio.css'
 
-export function Testimonio() {
+export function Testimonio(props) {
   return (
     <div className='contenedor-testimonio'>
       <img 
         className='imagen-testimonio' 
-        src={require('../imagenes/testimonio-emma.png')}
-        alt='Foto' 
+        src={require(`../imagenes/testimonio-${props.imagen}.png`)}
+        alt={`Foto de ${props.nombre}`} 
       />
       <div className="contenedor-texto-testimonio">
-        <p className="nombre-testimonio">
-          Emma Bostian en Suecia
-        </p>
-        <p className="cargo-testimonio">
-          Ingeniera de Software en Spotify
-        </p>
-        <p className="texto-testimonio">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eos deleniti inventore dolorem voluptates voluptas labore vitae necessitatibus placeat quibusdam commodi accusantium similique accusamus, illo culpa vel excepturi quam quaerat.
-        </p>
+        <p className="nombre-testimonio"><strong>{props.nombre}</strong> en <strong>{props.pais}</strong></p>
+        <p className="cargo-testimonio">{props.cargo} en {props.empresa}</p>
+        <p className="texto-testimonio">{props.testimonio}</p>
       </div>
     </div>
   );
 }
-
-// export default Testimonio;
