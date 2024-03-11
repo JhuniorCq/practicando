@@ -1,0 +1,29 @@
+
+.contenedor-input {
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-tarea {
+  flex-grow: 3;
+  padding: 14px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #00471b;
+  font-size: 18px;
+  outline: none;
+}
+
+.btn-agregar-tarea {
+  padding: 16px;
+  font-size: 18px;
+  background-color: #00471b;
+  color: #fff;
+  flex-grow: 1;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
