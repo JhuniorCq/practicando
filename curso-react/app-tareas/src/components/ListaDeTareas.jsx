@@ -34,6 +34,8 @@ export const ListaDeTareas = () => {
       }
       return tarea;
     });
+
+    setTareas(tareasActualizadas);
   }
 
   return (

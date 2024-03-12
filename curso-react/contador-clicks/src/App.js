@@ -2,20 +2,20 @@ import './App.css';
 import logoFreeCodeCamp from './imagenes/freecodecamp-logo.png';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
-import {useState} from 'react';
+import React, { useState } from 'react';
 
 function App() {
 
   // Hook useState
   const [cantidadClicks, setNumClicks] = useState(0);
 
-  const manejarClick = () => {
+  const contadorClick = () => {
     setNumClicks(cantidadClicks + 1);
-  }
+  };
 
   const reiniciarContador = () => {
     setNumClicks(0);
-  }
+  };
 
   return (
     <div className="App">
@@ -35,7 +35,7 @@ function App() {
         <Boton 
           texto='Click'
           esBotonDeClick={true}
-          manejarClick={manejarClick}
+          manejarClick={contadorClick}
         />
         <Boton 
           texto='Reiniciar'
