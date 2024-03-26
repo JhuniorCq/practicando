@@ -67,6 +67,11 @@ array14.sort((a, b) => {
     return b - a; // Output: [5, 4, 3, 2, 1]
 })
 
+let array15 = [1, 2, 3, 4, 5];
+const resultadoReduce = array15.reduce((acumulador, elementoArray) => {
+    return acumulador + elementoArray;
+}, 0);
+
 console.log(numero);
 console.log(valorIncludes);
 console.log(valorSplit);//Crea un array con partes de una cadena
@@ -88,3 +93,4 @@ console.log(array11);
 console.log(array12);
 console.log(array13);
 console.log(array14);
+console.log(resultadoReduce);
